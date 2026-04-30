@@ -1,0 +1,242 @@
+[
+  {
+    "id": "before-moving-company",
+    "phase": "이사 7~3일 전",
+    "phaseOrder": 1,
+    "title": "이사업체 일정 재확인",
+    "description": "계약한 이사업체에 이사일, 시간, 이사 주소를 다시 한 번 확인합니다.",
+    "tags": [],
+    "officialNote": "",
+    "link": ""
+  },
+  {
+    "id": "before-notify-building",
+    "phase": "이사 7~3일 전",
+    "phaseOrder": 1,
+    "title": "관리사무소 또는 임대인에게 이사일 공유",
+    "description": "공동주택은 관리사무소에, 빌라·단독주택은 임대인에게 이사일을 미리 알립니다. 엘리베이터 보양재 설치나 주차 예약이 필요한 경우도 있습니다.",
+    "tags": ["아파트/오피스텔", "빌라/다가구/단독"],
+    "officialNote": "",
+    "link": ""
+  },
+  {
+    "id": "before-gas",
+    "phase": "이사 7~3일 전",
+    "phaseOrder": 1,
+    "title": "도시가스 전출·전입 예약 확인",
+    "description": "관할 지역 도시가스 고객센터에 연락해 이사 날짜에 맞춰 전출·전입 예약이 필요한지 확인합니다.",
+    "tags": ["빌라/다가구/단독", "아파트/오피스텔"],
+    "officialNote": "지역 도시가스사별 절차가 다를 수 있습니다.",
+    "link": ""
+  },
+  {
+    "id": "before-internet",
+    "phase": "이사 7~3일 전",
+    "phaseOrder": 1,
+    "title": "인터넷·TV 이전 설치 예약",
+    "description": "사용 중인 인터넷·케이블 통신사에 연락해 이사일에 맞춰 이전 설치를 예약합니다.",
+    "tags": [],
+    "officialNote": "",
+    "link": ""
+  },
+  {
+    "id": "before-autopay",
+    "phase": "이사 7~3일 전",
+    "phaseOrder": 1,
+    "title": "자동이체 중인 공과금 확인",
+    "description": "전기, 가스, 수도, 관리비 등 자동이체 내역을 확인하고 명의변경 또는 해지 필요 여부를 파악합니다.",
+    "tags": [],
+    "officialNote": "",
+    "link": ""
+  },
+  {
+    "id": "before-car-address",
+    "phase": "이사 7~3일 전",
+    "phaseOrder": 1,
+    "title": "차량 주소 변경 준비",
+    "description": "차량 등록증 주소 변경(이전등록)은 이사 후 15일 이내에 해야 합니다. 필요 서류를 미리 확인하세요.",
+    "tags": ["차량 보유"],
+    "officialNote": "관할 자동차등록사업소 또는 정부24에서 절차 확인",
+    "link": "https://www.gov.kr"
+  },
+  {
+    "id": "before-mail",
+    "phase": "이사 7~3일 전",
+    "phaseOrder": 1,
+    "title": "우편물 전송서비스 신청 준비",
+    "description": "인터넷우체국에서 우편물 전송서비스를 신청하면 기존 주소로 온 우편물을 새 주소로 받을 수 있습니다. 이사 전·후 모두 신청 가능합니다.",
+    "tags": ["우편물 이전 필요"],
+    "officialNote": "인터넷우체국 우편물 전송서비스(service.epost.go.kr) 이용",
+    "link": "https://service.epost.go.kr"
+  },
+  {
+    "id": "moveday-meter",
+    "phase": "이사 당일",
+    "phaseOrder": 2,
+    "title": "전기·도시가스·수도 계량기 지침 확인",
+    "description": "이사 당일 전기, 가스, 수도 계량기 수치를 사진으로 찍어 기록해두세요. 정산 분쟁을 예방할 수 있습니다.",
+    "tags": [],
+    "officialNote": "",
+    "link": ""
+  },
+  {
+    "id": "moveday-management-fee",
+    "phase": "이사 당일",
+    "phaseOrder": 2,
+    "title": "관리비·장기수선충당금 정산 확인",
+    "description": "이사 당일 관리사무소에 관리비 및 장기수선충당금 정산 방법을 확인합니다. 세입자는 장기수선충당금을 돌려받을 수 있는 경우가 있으니 개별 계약 조건을 확인하세요.",
+    "tags": ["전세/월세 세입자", "아파트/오피스텔"],
+    "officialNote": "장기수선충당금 반환 여부는 개별 계약 조건에 따라 다릅니다.",
+    "link": ""
+  },
+  {
+    "id": "moveday-contract",
+    "phase": "이사 당일",
+    "phaseOrder": 2,
+    "title": "임대차계약서 원본 또는 사본 보관",
+    "description": "확정일자와 전입신고에 필요하므로 임대차계약서 원본 또는 사본을 안전하게 챙겨두세요.",
+    "tags": ["전세/월세 세입자"],
+    "officialNote": "",
+    "link": ""
+  },
+  {
+    "id": "moveday-final-check",
+    "phase": "이사 당일",
+    "phaseOrder": 2,
+    "title": "잔금·열쇠·비밀번호·시설 상태 최종 확인",
+    "description": "잔금 지급, 열쇠 및 비밀번호 전달, 시설 이상 유무를 꼼꼼히 확인합니다.",
+    "tags": [],
+    "officialNote": "",
+    "link": ""
+  },
+  {
+    "id": "after-resident-reg",
+    "phase": "이사 후 1~3일",
+    "phaseOrder": 3,
+    "title": "전입신고 (정부24 또는 주민센터)",
+    "description": "새로운 주소지로 이사한 날부터 14일 이내에 전입신고를 해야 합니다. 정부24(온라인)나 관할 주민센터(방문)에서 신청 가능합니다.",
+    "tags": [],
+    "officialNote": "정부24(www.gov.kr) 또는 새 거주지 주민센터 방문",
+    "link": "https://www.gov.kr"
+  },
+  {
+    "id": "after-fixed-date",
+    "phase": "이사 후 1~3일",
+    "phaseOrder": 3,
+    "title": "확정일자 확인 (전월세 세입자)",
+    "description": "전월세 세입자는 임대차계약서에 확정일자를 받아두세요. 인터넷등기소(온라인) 또는 주민센터(방문)에서 신청 가능합니다.",
+    "tags": ["전세/월세 세입자"],
+    "officialNote": "대한민국 법원 인터넷등기소(www.iros.go.kr) 참고",
+    "link": "https://www.iros.go.kr"
+  },
+  {
+    "id": "after-lease-report",
+    "phase": "이사 후 1~3일",
+    "phaseOrder": 3,
+    "title": "주택임대차계약 신고 대상 여부 확인",
+    "description": "보증금 또는 차임에 따라 주택임대차계약 신고 의무 대상이 될 수 있습니다. 계약일로부터 30일 이내에 신고해야 합니다. 대상 여부는 공식기관에서 확인하세요.",
+    "tags": ["전세/월세 세입자"],
+    "officialNote": "부동산거래관리시스템(rtms.molit.go.kr) 또는 주민센터 확인",
+    "link": "https://rtms.molit.go.kr"
+  },
+  {
+    "id": "after-mail-forward",
+    "phase": "이사 후 1~3일",
+    "phaseOrder": 3,
+    "title": "우편물 전송서비스 신청",
+    "description": "기존 주소로 온 우편물을 새 주소로 받을 수 있도록 인터넷우체국에서 우편물 전송서비스를 신청합니다.",
+    "tags": ["우편물 이전 필요"],
+    "officialNote": "",
+    "link": "https://service.epost.go.kr"
+  },
+  {
+    "id": "after-address-change",
+    "phase": "이사 후 1~3일",
+    "phaseOrder": 3,
+    "title": "금융·보험·통신·쇼핑몰 주소 변경",
+    "description": "은행, 카드사, 보험사, 통신사, 주요 쇼핑몰 등 개인 주소가 등록된 곳에서 새 주소로 변경합니다.",
+    "tags": [],
+    "officialNote": "",
+    "link": ""
+  },
+  {
+    "id": "after-water",
+    "phase": "이사 후 1~3일",
+    "phaseOrder": 3,
+    "title": "수도 명의변경 확인",
+    "description": "수도 요금 명의변경이 필요한 경우 해당 지자체 수도사업소에 문의합니다. 서울은 아리수 사이버고객센터에서 확인하세요.",
+    "tags": ["서울 거주"],
+    "officialNote": "서울시 아리수 사이버고객센터(i121.seoul.go.kr) 참고",
+    "link": "https://i121.seoul.go.kr"
+  },
+  {
+    "id": "after-electricity",
+    "phase": "이사 후 1~3일",
+    "phaseOrder": 3,
+    "title": "전기 명의변경 확인",
+    "description": "한전ON에서 전기 요금 명의변경이 필요한지 확인합니다. 관리사무소에서 일괄 처리하는 경우도 있으니 먼저 확인하세요.",
+    "tags": ["빌라/다가구/단독"],
+    "officialNote": "한전ON(online.kepco.co.kr) 참고",
+    "link": "https://online.kepco.co.kr"
+  },
+  {
+    "id": "after-car-register",
+    "phase": "이사 후 1~3일",
+    "phaseOrder": 3,
+    "title": "차량 등록 주소 변경",
+    "description": "차량 등록증 주소 변경(이전등록)은 이사 후 15일 이내에 해야 합니다. 관할 자동차등록사업소 또는 정부24 온라인으로 신청하세요.",
+    "tags": ["차량 보유"],
+    "officialNote": "정부24(www.gov.kr) 자동차 관련 민원 메뉴 참고",
+    "link": "https://www.gov.kr"
+  },
+  {
+    "id": "deadline-resident-confirm",
+    "phase": "이사 후 14·30일 내",
+    "phaseOrder": 4,
+    "title": "전입신고 기한 재확인 (14일 이내)",
+    "description": "전입신고는 전입한 날부터 14일 이내에 해야 합니다. 아직 신고하지 않았다면 지금 바로 확인하세요.",
+    "tags": [],
+    "officialNote": "정부24(www.gov.kr) 또는 새 거주지 주민센터",
+    "link": "https://www.gov.kr"
+  },
+  {
+    "id": "deadline-lease-report",
+    "phase": "이사 후 14·30일 내",
+    "phaseOrder": 4,
+    "title": "임대차계약 신고 완료 확인 (계약일로부터 30일)",
+    "description": "주택임대차계약 신고 의무 대상의 경우, 계약일로부터 30일 이내에 신고해야 합니다. 완료 여부를 재확인하세요.",
+    "tags": ["전세/월세 세입자"],
+    "officialNote": "부동산거래관리시스템(rtms.molit.go.kr) 참고",
+    "link": "https://rtms.molit.go.kr"
+  },
+  {
+    "id": "deadline-utility-name",
+    "phase": "이사 후 14·30일 내",
+    "phaseOrder": 4,
+    "title": "전기·가스·수도 명의변경 누락 여부 확인",
+    "description": "전기(한전ON), 도시가스, 수도 명의변경이 모두 완료되었는지 재확인합니다.",
+    "tags": [],
+    "officialNote": "한전ON(online.kepco.co.kr) 참고",
+    "link": "https://online.kepco.co.kr"
+  },
+  {
+    "id": "deadline-document",
+    "phase": "이사 후 14·30일 내",
+    "phaseOrder": 4,
+    "title": "정산 내역 및 신고 완료 증빙 문서 보관",
+    "description": "관리비 정산, 전입신고 확인증, 확정일자 확인증 등 관련 문서를 안전하게 보관합니다.",
+    "tags": [],
+    "officialNote": "",
+    "link": ""
+  },
+  {
+    "id": "deadline-real-estate-report",
+    "phase": "이사 후 14·30일 내",
+    "phaseOrder": 4,
+    "title": "부동산거래 신고 확인 (매매 시)",
+    "description": "부동산 매매계약 체결 시 계약 체결일로부터 30일 이내에 부동산거래관리시스템에 신고해야 합니다.",
+    "tags": ["자가/매매"],
+    "officialNote": "부동산거래관리시스템(rtms.molit.go.kr) 참고",
+    "link": "https://rtms.molit.go.kr"
+  }
+]

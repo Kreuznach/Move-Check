@@ -1,0 +1,26 @@
+# TeleportHQ export (소스 관리에서 제외)
+html/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (패키지 관리 도구 사용 시)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+.output/
+
+# Env
+.env
+.env.local
