@@ -1,0 +1,14 @@
+{
+  "name": "move-check",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static move checklist site",
+  "scripts": {
+    "dev": "serve . -l 4173",
+    "build": "node scripts/build.mjs",
+    "preview": "serve dist -l 4174"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
