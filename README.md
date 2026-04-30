@@ -107,14 +107,30 @@ vercel
 
 1. [pages.cloudflare.com](https://pages.cloudflare.com) 접속
 2. GitHub 저장소 연결
-3. Build command: (없음), Output directory: `/` (루트)
+3. Build command: `npm run build`, Output directory: `dist`
 4. 저장 후 자동 배포
+
+### Cloudflare Workers (Wrangler)
+
+이 저장소에는 [wrangler.jsonc](wrangler.jsonc)가 포함되어 있어 `npx wrangler deploy` 실행 시 다음 동작을 수행합니다.
+
+1. `build.command`로 `npm run build` 실행
+2. 생성된 `dist` 폴더만 정적 자산으로 업로드
+
+중요:
+루트 디렉터리(`.`)를 자산 디렉터리로 배포하면 `node_modules`까지 포함되어 Cloudflare Workers 자산 크기 제한(25 MiB)에 걸릴 수 있습니다.
+현재 설정은 이 문제를 피하도록 `assets.directory`를 `./dist`로 고정합니다.
+
+```bash
+npm clean-install
+npx wrangler deploy
+```
 
 ### Netlify
 
 1. [netlify.com](https://netlify.com) 접속
 2. GitHub 연결 또는 폴더 드래그앤드롭 배포
-3. Build command: (없음), Publish directory: `/`
+3. Build command: `npm run build`, Publish directory: `dist`
 
 > `data/checklist.json`은 **HTTP 서버를 통해 제공되어야** `fetch()`가 동작합니다.  
 > 로컬에서 `file://`로 열면 CORS 제한으로 체크리스트가 로딩되지 않을 수 있습니다.  
