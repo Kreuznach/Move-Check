@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "movecheck",
-  "compatibility_date": "2026-04-30",
+  "compatibility_date": "2026-05-02",
   "build": {
     "command": "npm run build"
   },
