@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "serve . -l 4173",
     "build": "node scripts/build.mjs",
+    "test": "node --test scripts/validate-build.test.mjs",
+    "check": "npm run build && npm run test",
     "preview": "serve dist -l 4174"
   },
   "devDependencies": {

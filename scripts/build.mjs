@@ -4,7 +4,7 @@ import path from 'node:path';
 
 const rootDir = process.cwd();
 const distDir = path.join(rootDir, 'dist');
-const buildEntries = ['index.html', 'css', 'js', 'data'];
+const buildEntries = ['index.html', 'css', 'js', 'data', 'img'];
 
 async function exists(targetPath) {
   try {

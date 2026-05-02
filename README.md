@@ -75,16 +75,49 @@
 ```
 /
 ├─ index.html          # 메인 페이지 (원페이지)
+├─ img/
+│  ├─ favicon.png      # 브라우저 탭 아이콘
+│  └─ og.png           # Open Graph / SNS 공유 이미지
 ├─ css/
 │  └─ styles.css       # 전체 스타일 (CSS Variables, Mobile-first)
 ├─ js/
 │  └─ app.js           # 체크리스트 렌더링, localStorage, 필터 로직
 ├─ data/
 │  └─ checklist.json   # 체크리스트 항목 데이터
-├─ html/               # TeleportHQ export 원본 (gitignore 처리)
-├─ .gitignore
+├─ scripts/
+│  ├─ build.mjs                # 정적 배포용 dist 생성
+│  └─ validate-build.test.mjs  # 배포 산출물 메타/자산 검증
+├─ .github/
+│  └─ workflows/
+│     └─ deploy-pages.yml      # main push 시 Cloudflare Pages 자동 배포
+├─ wrangler.jsonc      # Cloudflare Workers 정적 자산 배포 설정
+├─ package.json
+├─ package-lock.json
 └─ README.md
 ```
+
+---
+
+## 테스트 및 검증
+
+배포 전후로 아래 명령어를 기준으로 산출물을 검증합니다.
+
+```bash
+npm ci
+npm run build
+npm test
+```
+
+한 번에 실행하려면 다음 명령을 사용하세요.
+
+```bash
+npm run check
+```
+
+검증 항목:
+
+- `dist/img/favicon.png`, `dist/img/og.png` 포함 여부
+- `dist/index.html`의 canonical, favicon, `og:image`, `twitter:image` 메타 태그 포함 여부
 
 ---
 
@@ -105,10 +138,32 @@ vercel
 
 ### Cloudflare Pages
 
-1. [pages.cloudflare.com](https://pages.cloudflare.com) 접속
-2. GitHub 저장소 연결
-3. Build command: `npm run build`, Output directory: `dist`
-4. 저장 후 자동 배포
+이 저장소에는 [deploy-pages.yml](.github/workflows/deploy-pages.yml)이 포함되어 있어, `main` 브랜치에 push 하면 GitHub Actions가 **빌드 → 테스트 → Cloudflare Pages 배포**를 자동으로 수행합니다.
+
+사전 설정:
+
+1. Cloudflare Pages에서 프로젝트를 1회 생성합니다.
+2. GitHub 저장소 Settings → Secrets and variables → Actions에 아래 값을 추가합니다.
+3. Repository secret: `CLOUDFLARE_API_TOKEN`
+4. Repository secret: `CLOUDFLARE_ACCOUNT_ID`
+5. Repository variable: `CLOUDFLARE_PAGES_PROJECT_NAME`
+
+권장 API Token 권한:
+
+- `Cloudflare Pages:Edit`
+- `Account:Read`
+
+자동 배포 동작:
+
+1. `main` 브랜치에 push
+2. GitHub Actions가 `npm ci` 실행
+3. `npm run check`로 build 및 메타/자산 테스트 수행
+4. `wrangler pages deploy dist`로 Pages 반영
+
+주의:
+
+- Cloudflare Pages 대시보드의 Git 연동 자동 배포를 이미 사용 중이면, GitHub Actions 방식과 중복 배포되지 않도록 한쪽만 사용하세요.
+- 현재 대표 favicon 경로는 `/img/favicon.png`, 대표 공유 이미지는 `https://movecheck.coolkuma.workers.dev/img/og.png`로 설정되어 있습니다.
 
 ### Cloudflare Workers (Wrangler)
 
@@ -183,7 +238,8 @@ python3 -m http.server 3000
 - **CSS3** — CSS Variables, Mobile-first, Grid/Flexbox
 - **Vanilla JavaScript** — ES6+, `fetch()`, `localStorage`
 - **외부 의존성:** Google Fonts (Noto Sans KR) 1개만 사용
-- **빌드 도구:** 없음 (순수 정적 파일)
+- **Node.js 스크립트** — 정적 산출물 빌드 및 배포 전 검증
+- **GitHub Actions** — `main` push 기반 Cloudflare Pages 자동 배포
 
 ---
 
